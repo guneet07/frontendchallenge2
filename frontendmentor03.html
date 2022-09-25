@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single price grid component</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+    *{
+        /* margin: 0; */
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Karla', sans-serif;
+    }
+
+    body{
+        min-height: 100vh;
+        overflow: hidden; 
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-card{
+        width: 650px;
+        margin: 30px;
+        box-sizing: 8px;
+        box-shadow: 0 10px 20px rgba(100, 100, 100, 0.2);
+    }
+
+    .top-card{
+        width: 100%;
+        padding: 26px 30px;
+    }
+
+    /* .bottom-card{
+        flex-wrap: wrap;
+    } */
+
+    .left-card, .right-card{
+        width: 50%;
+        /* padding: 26px 30px; */
+        color: #fff;
+    }
+
+    .right-card{
+        padding: 27px 30px;
+    }
+
+    .left-card{
+        background-color: #2ab2af;
+        padding: 26px 30px;
+    }
+
+    .btn {
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1ad233;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 1px rgba(50, 50, 50, 0.2);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+span.price{
+    font-size: 34px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+    .right-card{
+        background-color: #4bbebc;
+    }
+
+    ul.list{
+        padding-left: 0;
+    }
+
+    .list li{
+        line-height: 1.5;
+        color: #fff;
+    }
+</style>
+<body>
+    <section class="price" id="price">
+        <div class="container flex">
+            <div class="main-card">
+                <div class="top-card">
+                    <h1>join our community</h1>
+                    <p>30-day, hassle-free money back guarantee</p>
+                    <p>Gain access to our full library of tutorials along with expert code reviews. 
+                        Perfect for any developers who are serious about honing their skills.</p>
+                </div>
+                <div class="bottom-card flex">
+                    <div class="left-card">
+                        <h2>monthly subscription</h2>
+                        <p><span class="price">$29</span>per month</p>
+                        <p>Full access for less than $1 a day</p>
+                        <button class="btn"> Sign Up</button>
+
+                    </div>
+                    <div class="right-card">
+                        <h2>why us</h2>
+                        <ul class="list">
+                            <li>Tutorials by industry experts</li>
+                            <li>Peer &amp; expert code review</li>
+                            <li>Coding exercises</li>
+                            <li>Access to our GitHub repos</li>
+                            <li>Community forum</li>
+                            <li>Flashcard decks</li>
+                            <li>New videos every week</li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
