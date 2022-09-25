@@ -95,6 +95,27 @@ span.price{
         line-height: 1.5;
         color: #fff;
     }
+    
+        @media screen and (max-width:767px){
+    body{
+        overflow: hidden;
+    }
+    #price{
+        position: fixed;
+    }
+    .flex {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+    }
+    .main-card{
+        margin: 20px 28px;
+    }
+   .top-card{
+    width: 50%;
+    }
+    }
 </style>
 <body>
     <section class="price" id="price">
