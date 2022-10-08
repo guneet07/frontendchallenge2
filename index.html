@@ -9,7 +9,6 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
     *{
-        /* margin: 0; */
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
@@ -96,12 +95,12 @@ span.price{
         color: #fff;
     }
     
-        @media screen and (max-width:767px){
-    body{
+@media screen and (max-width:767px){
+    /* body{
         overflow: hidden;
-    }
+    } */
     #price{
-        position: fixed;
+        /* position: fixed; */
     }
     .flex {
     display: flex;
@@ -111,9 +110,14 @@ span.price{
     }
     .main-card{
         margin: 20px 28px;
+        width: auto;
     }
    .top-card{
-    width: 50%;
+    width: 100%;
+    }
+     .left-card, .right-card{
+        width: 100%;
+        color: #fff;
     }
     }
 </style>
